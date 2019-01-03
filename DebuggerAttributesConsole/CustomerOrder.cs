@@ -1,9 +1,10 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 
 namespace DebuggerAttributesConsole
 {
+    //A CustomerOrder will displayed as one line of text in Debugging windows ...
+    [DebuggerDisplay("{Quantity} * {ProductCode} at ${ProductPrice} = {CalculateOrderTotal()}")]
     public class CustomerOrder
     {
         public Guid CustomerOrderId { get; set; }

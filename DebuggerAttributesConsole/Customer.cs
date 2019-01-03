@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
+using System.Diagnostics;
 
 namespace DebuggerAttributesConsole
 {
+    //Customer will be displayed like a CustomerDebuggingView in Debugging windows ...
+    [DebuggerTypeProxy(typeof(CustomerDebuggingView))]
     public class Customer
     {
         public int CustomerId { get; set; }
